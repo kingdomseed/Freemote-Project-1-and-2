@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap");
+* {
+  margin: 0;
+}
+
+body,
+html {
+  min-width: 100%;
+  min-height: 100vh;
+  background-image: url("https://assets.codepen.io/6060109/ZigZag.png");
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", "Ubuntu";
+  gap: 1rem;
+}
+
+h2 {
+  color: #2f463d;
+  font-family: Montserrat;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h3 {
+  color: #2f463d;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+p {
+  color: var(--Gray-3, #828282);
+  font-family: Ubuntu;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; /* 185.714% */
+}
+
+a {
+  color: #467a66;
+  font-family: Montserrat;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.center-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  width: 350px;
+  height: 575px;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 40px 40px -20px #3c7b61;
+  position: relative;
+}
+
+.right-window {
+  display: none;
+}
+
+.left-window {
+  display: none;
+}
+
+.close-icon {
+  background-image: url("https://assets.codepen.io/6060109/food-close-x.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -89.5%;
+  top: 2%;
+  cursor: pointer;
+}
+
+#flow-image {
+  align-self: center;
+  margin-top: 3rem;
+}
+
+#confirmation-text {
+  margin-top: 2rem;
+}
+
+#detail-text {
+  margin: 1rem 2rem;
+}
+
+.item-container {
+  margin-top: 1rem;
+  border-radius: 0.3125rem;
+  background: #f0fff5;
+  display: flex;
+  align-items: center;
+}
+
+.name-price {
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+}
+
+#change-link {
+  margin-right: 1rem;
+  margin-left: 0.25rem;
+}
+
+#eat-button {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 0.3125rem;
+  background: #46a67e;
+  box-shadow: 0px 20px 20px 0px rgba(103, 189, 153, 0.2);
+  width: 17.4375rem;
+  height: 3.125rem;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+#eat-button:hover {
+  opacity: 0.8;
+  transition: 0.5s ease all;
+}
+
+.breadcrumb {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 7px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+#center-bc {
+  background: #67bd99;
+}
+
+@media only screen and (min-width: 992px) {
+  .left-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    height: 575px;
+    border-radius: 0.3125rem;
+    box-shadow: 0px 40px 40px -20px #3c7b61;
+  }
+
+  .right-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    height: 575px;
+    border-radius: 0.3125rem;
+    box-shadow: 0px 40px 40px -20px #3c7b61;
+  }
+}
