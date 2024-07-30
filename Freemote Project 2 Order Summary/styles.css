@@ -120,7 +120,7 @@ a {
   margin-left: 0.25rem;
 }
 
-#eat-button {
+.eat-button {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   border: none;
@@ -140,7 +140,7 @@ a {
   transition: 0.5s ease all;
 }
 
-#eat-button:hover {
+.eat-button:hover {
   opacity: 0.8;
   transition: 0.5s ease all;
 }
