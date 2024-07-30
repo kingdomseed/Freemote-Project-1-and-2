@@ -69,10 +69,7 @@ a {
   position: relative;
 }
 
-.right-window {
-  display: none;
-}
-
+.right-window,
 .left-window {
   display: none;
 }
@@ -120,7 +117,7 @@ a {
   margin-left: 0.25rem;
 }
 
-.eat-button {
+#eat-button {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   border: none;
@@ -140,7 +137,7 @@ a {
   transition: 0.5s ease all;
 }
 
-.eat-button:hover {
+#eat-button:hover {
   opacity: 0.8;
   transition: 0.5s ease all;
 }
@@ -155,6 +152,8 @@ a {
   cursor: pointer;
 }
 
+#left-bc,
+#right-bc,
 #center-bc {
   background: #67bd99;
 }
@@ -171,6 +170,18 @@ a {
     height: 575px;
     border-radius: 0.3125rem;
     box-shadow: 0px 40px 40px -20px #3c7b61;
+    position: relative;
+  }
+
+  .close-icon-left {
+    background-image: url("https://assets.codepen.io/6060109/food-close-x.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -89.5%;
+    top: 2%;
+    cursor: pointer;
   }
 
   .right-window {
@@ -184,5 +195,44 @@ a {
     height: 575px;
     border-radius: 0.3125rem;
     box-shadow: 0px 40px 40px -20px #3c7b61;
+    position: relative;
+  }
+
+  .close-icon-right {
+    background-image: url("https://assets.codepen.io/6060109/food-close-x.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -89.5%;
+    top: 2%;
+    cursor: pointer;
+  }
+
+  #next-button,
+  #track-button {
+    margin-top: 4.2rem;
+    margin-bottom: 2rem;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 0.3125rem;
+    background: #bdbdbd;
+    box-shadow: 0px 20px 20px 0px rgba(103, 189, 153, 0.2);
+    width: 17.4375rem;
+    height: 3.125rem;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.5s ease all;
+  }
+
+  #next-button:hover,
+  #track-button:hover {
+    opacity: 0.8;
+    transition: 0.5s ease all;
   }
 }
